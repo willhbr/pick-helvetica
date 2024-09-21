@@ -1,0 +1,18 @@
+images:
+  dev:
+    tag: click-helvetica:latest
+    from: Containerfile
+
+containers:
+  dev:
+    name: click-helvetica
+    image: click-helvetica:latest
+    interactive: true
+    autoremove: true
+    ports:
+      6900: 80
+    bind_mounts:
+      .: /src
+    flags:
+      host: 0
+      port: 80

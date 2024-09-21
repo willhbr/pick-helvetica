@@ -1,0 +1,49 @@
+---
+---
+<!doctype html>
+<html>
+  <head>
+    <title>Pick Helvetica</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <h1>Pick Helvetica</h1>
+      <div class="score">
+        You have <span id="points">0</span> points!
+      </div>
+    </header>
+
+    <div id="compare">
+      <div class="letters">
+        <div class="letter">
+          <svg id="left" viewBox="0 0 500 500">
+          </svg>
+        </div>
+        <div class="letter">
+          <svg id="right" viewBox="0 0 500 500">
+          </svg>
+        </div>
+      </div>
+      <div class="instructions">
+        Click on Helvetica
+      </div>
+    </div>
+
+
+    <div id="check" style="display: none">
+      <div class="letter">
+        <svg id="single" viewBox="0 0 500 500">
+        </svg>
+      </div>
+
+      <div class="buttons">
+        <button id="yes">Hell-Yeah-tica</button>
+        <button id="no">Helvetic-NAH</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
